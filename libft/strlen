@@ -1,0 +1,21 @@
+#include<string.h>
+
+size_t	strlen(const char *s)
+{
+	size_t len;
+	
+	len = 0;
+		while(s[len] != '\0')
+			len ++;
+		return(len);
+}
+
+#include<stdio.h>
+
+int main()
+{
+	char	*str = "Merhaba";
+	size_t len = strlen(str);
+	printf("%zu", len);
+	return 0;
+}
