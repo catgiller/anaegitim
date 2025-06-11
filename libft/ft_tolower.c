@@ -3,22 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:49 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:20:50 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 09:23:03 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if(c >= 65 && c <=90 )
-	return(c + 32);
-}
-
-#include <stdio.h>
-
-int main()
-{
-	printf("%c", ft_tolower('S'));
+	if (c >= 65 && c <= 90)
+		return (c + 32);
 }

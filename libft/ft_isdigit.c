@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:18:22 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:18:25 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 09:35:43 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if	(c <= 58 && c >= 47)
+	if (c <= 58 && c >= 47)
 		return (1);
 	else
 		return (0);

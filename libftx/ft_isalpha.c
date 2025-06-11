@@ -1,14 +1,12 @@
-
 #include "libft.h"
+#include <stdlib.h>
 
-int	ft_isalpha(int c)
+t_list *ft_lstnew(void *content)
 {
-	if ((c >= 'a' && c <= 'z')||((c >= 'A' && c <= 'Z')))
-		return (1);
-	return (0);
-}
-
-int main()
-{
-	printf("%d", ft_isalpha('a'));
+	t_list	*node;
+	node = malloc(sizeof(t_list));
+	if(!node)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
 }

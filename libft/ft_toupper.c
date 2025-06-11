@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:54 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:20:55 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 10:05:05 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	if(c >= 97 && c <= 122)
-	return(c - 32);
+	if (c >= 97 && c <= 122)
+		return (c - 32);
 }

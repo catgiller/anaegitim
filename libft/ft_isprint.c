@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:18:28 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:18:31 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 09:58:45 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if( 32 <= c && c <= 126)
+	if (32 <= c && c <= 126)
 		return (1);
 	else
 		return (0);

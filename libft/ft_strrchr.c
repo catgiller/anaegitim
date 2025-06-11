@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:32 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:20:34 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 09:35:19 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 #include "libft.h"
 
@@ -20,10 +22,10 @@ char	*ft_strrchr(const char *s, int c)
 	while (slen > 0)
 	{
 		if (s[slen - 1] == (char)c)
-			return (char *)(s + slen - 1);
-	slen--;
+			return ((char *)(s + slen - 1));
+		slen--;
 	}
 	if (s[0] == (char)c)
-			return (char *)s;
-	return NULL;
+		return ((char *)s);
+	return (NULL);
 }

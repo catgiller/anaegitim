@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:17:49 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:17:51 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 10:01:32 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-size_t	malloc_size;
 	void	*malloc_ptr;
+	size_t	malloc_size;
 
 	malloc_size = nmemb * size;
 	malloc_ptr = malloc(malloc_size);

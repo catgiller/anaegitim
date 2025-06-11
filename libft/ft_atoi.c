@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:15:41 by codespace         #+#    #+#             */
-/*   Updated: 2025/06/10 07:17:32 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/11 09:17:15 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int	sig; 
+	int	sig;
 	int	rst;
 
 	rst = 0;
 	sig = 1;
 	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
 		nptr++;
-	if(*nptr == '+')
+	if (*nptr == '+')
 	{
 		sig = 1;
 		nptr ++;
@@ -29,10 +29,10 @@ int ft_atoi(const char *nptr)
 		sig = -1;
 		nptr ++;
 	}
-	while(*nptr >= 48 && *nptr <= 57)
+	while (*nptr >= 48 && *nptr <= 57)
 	{
 		rst = rst * 10 + (*nptr - '0');
 		nptr ++;
 	}
-	return(rst * sig);
+	return (rst * sig);
 }

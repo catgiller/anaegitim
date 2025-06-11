@@ -42,4 +42,9 @@ void	ft_putnbr_fd(int n, int fd);
 void    ft_striteri(char *s, void (*f)(unsigned int, char*));
 char 	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
+typedef struct s_list
+{
+	void *content;
+	struct s_list *next;
+}	t_list;
 #endif

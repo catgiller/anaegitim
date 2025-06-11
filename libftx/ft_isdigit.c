@@ -1,14 +1,17 @@
-
-#include "libft.h"
-
-int	ft_isdigit(int c)
+typedef struct	character
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
-	return (0);
-}
+	char	*race;
+	int		health;
+}ch;
+
+#include <stdio.h>
 
 int main()
 {
-	printf("%d", ft_isdigit('5'));
+	// struct character	erva;
+	// struct character	nazife;
+	ch erva;
+	erva.race = "human";
+	erva.health = 1402;
+	printf("%s\n%d\n", erva.race,erva.health);
 }
