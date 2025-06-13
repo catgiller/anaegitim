@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 09:49:26 by codespace         #+#    #+#             */
-/*   Updated: 2025/06/13 10:16:04 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/13 12:06:03 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
