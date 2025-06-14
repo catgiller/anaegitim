@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 09:49:26 by codespace         #+#    #+#             */
-/*   Updated: 2025/06/13 12:06:03 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/14 08:51:01 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define LIBFT_H
 
 #include <stddef.h>
-#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 
