@@ -6,13 +6,12 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:31:04 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:31:22 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/14 09:34:20 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-
 }
