@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:54 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/13 10:15:57 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/14 09:29:59 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,5 @@ int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 		return (c - 32);
+	return (c);
 }

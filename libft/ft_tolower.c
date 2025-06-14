@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:49 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/13 10:15:53 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/14 09:29:29 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,5 @@ int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (c + 32);
+	return (c);
 }
