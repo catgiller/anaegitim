@@ -6,11 +6,9 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:05 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/13 10:15:05 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/15 12:34:05 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 #include "libft.h"
 
