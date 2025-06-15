@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/15 12:51:34 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/15 14:15:41 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/15 15:05:38 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
+	int	i;
+
+	i = 0;
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		i++;
+	}
+	
 }
