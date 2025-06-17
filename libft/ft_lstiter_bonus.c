@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/10 07:15:48 by codespace         #+#    #+#             */
-/*   Updated: 2025/06/16 11:59:33 by ervsahin         ###   ########.fr       */
+/*   Created: 2025/06/17 11:52:45 by ervsahin          #+#    #+#             */
+/*   Updated: 2025/06/17 11:59:14 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	i;
-
-	i = 0;
-	while (i < n)
+	while(lst != NULL)
 	{
-		((unsigned char *)s)[i] = 0;
-		i++;
+		f(lst->content);
+		lst = lst->next;
 	}
 }
