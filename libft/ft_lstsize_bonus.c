@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/15 12:51:34 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/18 16:31:25 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/18 16:39:29 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,5 @@ int	ft_lstsize(t_list *lst)
 		lst = lst->next;
 		i++;
 	}
+	return (i);
 }
