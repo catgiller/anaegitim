@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:20:00 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/10 07:20:01 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/18 08:41:13 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*joined;
+	char	*new;
 	size_t	i;
 	size_t	j;
 
 	if (!s1 || !s2)
 		return (NULL);
-	joined = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (!joined)
+	new = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!new)
 		return (NULL);
 	i = 0;
 	while (s1[i])
 	{
-		joined[i] = s1[i];
+		new[i] = s1[i];
 		i++;
 	}
 	j = 0;
 	while (s2[j])
 	{
-		joined[i + j] = s2[j];
+		new[i + j] = s2[j];
 		j++;
 	}
-	joined[i + j] = '\0';
-	return (joined);
+	new[i + j] = '\0';
+	return (new);
 }
