@@ -6,12 +6,11 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:18:52 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/15 12:31:21 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/18 16:31:06 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

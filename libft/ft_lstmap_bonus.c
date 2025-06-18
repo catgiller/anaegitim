@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 11:53:09 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/17 12:18:46 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/18 16:33:32 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*nnode;
 	void	*ncontent;
 
-	if(!lst || !f)
+	if (!lst || !f)
 		return (NULL);
 	nlist = NULL;
 	while (lst)
@@ -29,8 +29,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			ft_lstclear(&nlist, del);
 			return (NULL);
 		}
-	ft_lstadd_back(&nlist, nnode);
-	lst = lst->next;
+		ft_lstadd_back(&nlist, nnode);
+		lst = lst->next;
 	}
 	return (nlist);
 }
