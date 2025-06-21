@@ -6,13 +6,13 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:18:22 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/13 10:13:04 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/21 18:26:57 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c <= 58 && c >= 47)
+	if (c > 47 && c < 58)
 		return (1);
 	else
 		return (0);

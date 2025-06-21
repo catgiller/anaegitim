@@ -6,15 +6,15 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:19:29 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/14 09:18:33 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/21 18:13:06 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
 	if (!s)
 		return ;
