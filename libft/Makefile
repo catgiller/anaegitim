@@ -1,5 +1,5 @@
 NAME = libft.a
-FLAG = -Wall -Wextra -Werror
+CFLAG = -Wall -Wextra -Werror
 
 SRC = \
 	ft_atoi.c \
@@ -49,20 +49,25 @@ BONUS = \
 	ft_lstsize_bonus.c
 
 OBJ = $(SRC:.c=.o)
-
+B_OBJ = $(BONUS:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
-	gcc $(FLAG) -c $(SRC)
-	ar rc $(NAME) *.o
-bonus:
-	gcc $(FLAG) -c $(BONUS)
-	ar rc $(NAME) *.o
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
+
+bonus: $(OBJ) $(B_OBJ)
+	ar rcs $(NAME) $(OBJ) $(B_OBJ)
+
+%.o: %.c
+	cc $(CFLAG) -c $< -o $@
+
 clean:
-	/bin/rm -f  *.o
+	rm -f $(OBJ) $(B_OBJ)
+
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(NAME)
+
 re: fclean all
 
 .PHONY: all bonus clean fclean re

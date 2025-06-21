@@ -6,11 +6,12 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:19:35 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/18 16:22:42 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/21 18:09:42 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static size_t	ft_word_count(const char *s, char c)
 {
