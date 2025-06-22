@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: natlas <natlas@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/11 09:49:26 by codespace         #+#    #+#             */
-/*   Updated: 2025/06/21 20:10:56 by natlas           ###   ########.fr       */
+/*   Created: 2025/06/11 09:49:26 by ervsahin          #+#    #+#             */
+/*   Updated: 2025/06/22 20:52:14 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

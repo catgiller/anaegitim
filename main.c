@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/10 07:15:48 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/22 20:53:06 by ervsahin         ###   ########.fr       */
+/*   Created: 2025/06/21 10:58:09 by ervsahin          #+#    #+#             */
+/*   Updated: 2025/06/21 13:01:44 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-void	ft_bzero(void *s, size_t n)
+int main(void)
 {
-	size_t	i;
+	int	src[5] = {97, 97, 97, 97, 97};
+	int	dest[7] = {0};
+	int	i = 0;
 
-	i = 0;
-	while (i < n)
+	ft_memcpy(dest, src, 9);
+
+	while (i < 5)
 	{
-		((unsigned char *)s)[i] = 0;
+		printf("dest[%d] = %d\n", i, dest[i]);
 		i++;
 	}
+
+	return (0);
 }
