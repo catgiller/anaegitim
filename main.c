@@ -6,26 +6,23 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 10:58:09 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/21 13:01:44 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/22 21:40:23 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft/libft.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void)
+int main()
 {
-	int	src[5] = {97, 97, 97, 97, 97};
-	int	dest[7] = {0};
-	int	i = 0;
-
-	ft_memcpy(dest, src, 9);
-
-	while (i < 5)
-	{
-		printf("dest[%d] = %d\n", i, dest[i]);
-		i++;
-	}
-
-	return (0);
+    char *nazife;
+    nazife = malloc(6);
+    if (!nazife)
+        return (1);
+    ft_memset(nazife, 67, 4); // 'A' karakteriyle doldur
+    nazife[4] = '\0';          // Null-terminator ekle
+    printf("%s\n", nazife);
+    free(nazife);
+    return 0;
 }
