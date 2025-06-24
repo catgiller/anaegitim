@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 07:18:36 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/21 18:09:20 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/24 11:09:08 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@ static int	ft_intlen(int n)
 {
 	int	len;
 
-	len = (n <= 0);
+	if (n <= 0)
+		len = 1;
+	else
+		len = 0;
 	while (n)
 	{
-		n /= 10;
+		n = n / 10;
 		len++;
 	}
 	return (len);
