@@ -6,7 +6,7 @@
 /*   By: ervsahin <ervsahin@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/14 09:10:45 by ervsahin          #+#    #+#             */
-/*   Updated: 2025/06/22 21:47:52 by ervsahin         ###   ########.fr       */
+/*   Updated: 2025/06/24 10:08:28 by ervsahin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t				i;
+	size_t	i;
 
 	if (!dest && !src)
 		return (NULL);
