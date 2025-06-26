@@ -1,5 +1,5 @@
 NAME = libft.a
-CFLAG = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 SRC = \
 	ft_atoi.c \
@@ -43,6 +43,9 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -I. -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
